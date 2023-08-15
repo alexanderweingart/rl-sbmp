@@ -1,0 +1,31 @@
+intermediate_nodes: True
+states_per_node: 10
+
+extension_mode: "RL_ONNX"
+
+models:
+  ackermann_car_first_order: # this uses the faster config (more similar to the second order car environment)
+      sb3: "driver/star_models/ackermann/vel_ctrl/fast_config/ppo_1690561770.zip"
+      onnx: "driver/star_models/ackermann/vel_ctrl/fast_config/ppo_1690561770.onnx"
+  ackermann_car_second_order:
+    sb3: "driver/star_models/ackermann/accl_ctrl/ppo_1682168184.zip"
+    onnx: "driver/star_models/ackermann/accl_ctrl/ppo_1682168184.onnx"
+
+
+# not needed for the rl planner
+propagation_t_min: 0
+propagation_t_max: 0
+
+nn_struct_waiting_nodes: 100
+max_tries_collision_free_sampling: 1000
+
+goal_bias: 0.01
+
+max_failures: -1  # (quasi)infinite failures
+rounds: -1  # (quasi) infinite rounds
+max_iterations: -1  # (quasi) infinite samples per round
+
+
+reuse_tree: False
+
+cost_boundary_shrink_factor: 1

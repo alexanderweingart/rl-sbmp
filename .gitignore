@@ -1,0 +1,9 @@
+venv
+models
+__pycache__
+videos
+.vscode
+trial_run_*
+evaluations
+motion_planning/evaluator/experiment_data
+rl/data

@@ -1,0 +1,7 @@
+planner_config_path: "motion_planning/planner_configs/thesis/ao-rrt_mcp_guided.yaml"
+problem_config_path: "motion_planning/problem_configs/zigzag_2023-07_25_0_second_order.yaml"
+robot_config_path: "driver/star_models/ackermann/accl_ctrl/config.yaml"
+
+store_intermediate_trajs: True
+nr_of_runs: 25
+timeout_secs: 240

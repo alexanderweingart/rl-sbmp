@@ -1,0 +1,30 @@
+map:
+  dimensions: [5,5]
+  obstacles:
+    - type: box
+      center: [2.5, 0]
+      size: [5, 0.125]
+    - type: box
+      center: [2.5, 5]
+      size: [5, 0.125]
+    - type: box
+      center: [0, 2.5]
+      size: [0.125, 5]
+    - type: box
+      center: [5, 2.5]
+      size: [0.125, 5]
+    - type: box
+      center: [2.5, 0]
+      size: [2.5, 0.125]
+    - type: box
+      center: [1.75, 1.75]
+      size: [1, 0.125]
+    - type: box
+      center: [1.75, 3.25]
+      size: [1, 0.125]
+    - type: box
+      center: [2.25, 2.5]
+      size: [0.125, 1.5]
+robot:
+  start: [1.5,2.5,0] # x,y,theta
+  goal: [4,2.5,0] # x,y,theta

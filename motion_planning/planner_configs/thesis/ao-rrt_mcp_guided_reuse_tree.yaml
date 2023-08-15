@@ -1,0 +1,29 @@
+intermediate_nodes: True
+states_per_node: 10
+
+extension_mode: "GUIDED_MCP"
+
+models:
+  ackermann_car_first_order:
+      sb3: "driver/star_models/ackermann/vel_ctrl/ppo_1678273546.zip"
+      onnx: "driver/star_models/ackermann/vel_ctrl/ppo_1678273546.onnx"
+  ackermann_car_second_order:
+    sb3: "driver/star_models/ackermann/accl_ctrl/ppo_1682168184.zip"
+    onnx: "driver/star_models/ackermann/accl_ctrl/ppo_1682168184.onnx"
+    
+
+propagation_t_min: 0.1
+propagation_t_max: 5
+mcp_propagation_samples_one: 10
+
+nn_struct_waiting_nodes: 100
+max_tries_collision_free_sampling: 1000
+
+goal_bias: 0.01
+
+max_failures: -1
+max_iterations: -1
+rounds: -1
+
+reuse_tree: True
+cost_boundary_shrink_factor: 1

@@ -1,0 +1,63 @@
+# first used: 2023-04-22
+# purpose:
+# uses the already tested terminal_normalized_dist_reward_only as a comparison (with the same seeds and starting configs)
+
+gt_theta: 0.3
+gamma: 0.999
+ignore_dist_constraint: true
+learning_rate: 7.77e-05
+ent_coef: 0.01
+
+lin_vel_min: -0.1
+lin_vel_max: 0.5
+
+clip_lin_vel: True # enforce hard velocity boundaries in the step function
+
+lin_accl_min: -1
+lin_accl_max: 1
+
+phi_vel_min: -3.141592653589793 #  -pi/s
+phi_vel_max: 3.141592653589793 #  pi/s
+
+goal_tolerance_lin_vel: 0.05
+goal_tolerance_phi: 0.2618 
+
+phi_min: -1.0472 # - pi/3
+phi_max: 1.0472 # pi/3
+
+L: 0.25
+
+delta_t: 0.1
+
+max_steps: 100
+
+stop_at_lin_constraint_violation: False
+
+goal_tolerance_theta: 0.6
+goal_tolerance_pos: 0.1
+std_noise: 0
+id_postfix: ""
+m_d: 1
+m_theta: 1
+m_v: 1
+m_phi: 1
+m_lin_vel_pen: 1
+
+reward_func: "step_penalty_target_reward"
+
+# m_d: 1.5
+# m_v: 1
+# m_theta: 1
+# m_phi: 1
+# m_lin_vel_pen: 10 # high linear velocity penalty
+
+
+seeds:
+  - 1682168184
+    #  - 1682168185
+    #- 1682168186
+
+
+easy_training: False # no curriculum learning
+# training_set_path: feasible_trajectories_accl_car/1000_starting_poses_20_steps.yaml
+# max_n_starting_configs: 100

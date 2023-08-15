@@ -1,0 +1,9 @@
+map_path: motion_planning/maps/bugtrap_micro.yaml
+
+start: [1.5,2.5,0] # x,y,theta
+goal: [4,2.5,0] # x,y,theta
+
+dynamics: "ackermann_car_first_order"
+
+goal_tolerance_pos: 0.2
+goal_tolerance_theta: 0.6

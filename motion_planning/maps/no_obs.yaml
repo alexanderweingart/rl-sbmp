@@ -1,0 +1,7 @@
+map:
+  dimensions: [5,5]
+  obstacles:
+    -
+robot:
+  start: [1,2,0] # x,y,theta
+  goal: [3,2,0] # x,y,theta

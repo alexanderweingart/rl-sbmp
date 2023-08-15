@@ -1,0 +1,7 @@
+planner_config_path: "motion_planning/planner_configs/thesis/ao-rrt_rl_onnx_update.yaml"
+problem_config_path: "motion_planning/problem_configs/bugtrap_micro_2023-06-16_0_first_order.yaml"
+robot_config_path: "driver/star_models/ackermann/vel_ctrl/fast_config/config_23-07-28.yaml"
+
+store_intermediate_trajs: True
+nr_of_runs: 25
+timeout_secs: 240
