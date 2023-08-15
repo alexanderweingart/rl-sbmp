@@ -1,5 +1,5 @@
 # RL-SBMP
-![AO-RRT-RL: first-order car zig zag map](figures/trajectory_overlay_first_order_car_zigzag_rl_2023-08-04_13_48.png)
+![AO-RRT-RL: first-order car zig zag map](figures/tree-growth-first-order-car-rl.png)
 
 ## Codebase-Structure
 This repository features the codebase used for the experiments I conducted as part of my Master Thesis on "Enhancing Sampling Based Kinodynamic Motion Planning with Reinforcement Learning Policies".
