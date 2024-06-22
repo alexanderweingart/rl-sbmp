@@ -185,6 +185,6 @@ webcolors==1.12
 webencodings==0.5.1
 websocket-client==1.4.2
 websockets==11.0.3
-Werkzeug==2.2.2
+Werkzeug==3.0.3
 widgetsnbextension==4.0.5
 zipp==3.10.0
