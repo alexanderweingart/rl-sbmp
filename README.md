@@ -1,6 +1,10 @@
 # RL-SBMP
 ![AO-RRT-RL: first-order car zig zag map](figures/tree-growth-first-order-car-rl.png)
 
+> [!WARNING]  
+> This repository is not actively maintained and should only be used as a reference for similar projects. I removed the requirements-files (and the setup instructions referencing them). The package versions are outdated, many have critical-vulnerability warnings by now and I currently do not have time to continously update and test them.
+
+
 ## Codebase-Structure
 This repository features the codebase used for the experiments I conducted as part of my Master Thesis on "Enhancing Sampling Based Kinodynamic Motion Planning with Reinforcement Learning Policies".
 The repository is structured as follows:
@@ -23,14 +27,7 @@ The repository is structured as follows:
 - **/project\_utils**: root utility classes. includes transformations.py which features the methods used for the transformation between frames, as well as the sympy based homogeneous transformation matrix construction.
 - **/utils**: features utility class for interacting with the git repository (extract current commit hash etc.)
 - **/tmux**: tmux scripts for setting up multi-pane-working-environments. Currently includes the two scripts used to run the evaluations on the cluster
-
-## Setup
-### Creating a virtual environment and installing all relevant modules
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+  
 ## RL
 ### Example
 To start the training of the second order car with the curriculum learning setup using the first 100 bootstrap starting configs run
